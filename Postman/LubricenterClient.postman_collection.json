@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "feb07eb6-7234-491b-a66f-bd445937bacf",
+		"name": "LubricenterClient",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/apiproductos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"apiproductos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCategorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/apicategorias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"apicategorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetFindById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/apicategorias/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"apicategorias",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostCategorias",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCategoria\": 6,\r\n    \"nombre\": \"Filtros de aire sopranos\",\r\n    \"descripcion\": \"ojito pes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/categorias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
